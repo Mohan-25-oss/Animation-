@@ -1,3 +1,115 @@
+/* Navbar Start  */
+.navbar{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+    /* background-color: rgb(249, 238, 238); */
+    color: rgba(44, 22, 135, 0.714);
+}
+ul li{
+    display: inline-block;
+    padding: 20px;
+}
+ul li:hover{
+    background-color: green;
+    color: white;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    margin-left: -50px;
+    background-color: #d007f3;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+}
+.dropdown ul{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown ul li{
+    display: block;
+    margin: 0px;
+    padding: 10px;
+}
+ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    margin-left: -50px;
+    background-color: #d3cec3;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+}
+
+.dropdown-1 {
+    display: none;
+    width: 80px;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -30px;
+    background-color: #07f362;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+}
+.dropdown li:hover .dropdown-1{
+    display: block;
+    position: absolute;
+    margin-left: 125px;
+    background-color: #d7e6df;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+}
+.dropdown-2 {
+    display: none;
+    width: 80px;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -30px;
+    background-color: #07f362;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+}
+.dropdown-1 li:hover .dropdown-2{
+    display: block;
+    position: absolute;
+    margin-left: 70px;
+    background-color: #d7e6df;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+}
+/* Navbar End  */
+/* Navbar Hi effect Start  */
+.hi-effect {
+    font-size: 50px;
+    display: inline-block;
+    animation: hieffect 1s infinite;
+    rotate: 20deg;
+    margin: -20px;
+}
+@keyframes hieffect {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(-30deg)
+    }
+
+    to {
+        transform: rotate(0deg)
+    }
+}
+/*   Hi effect end  */
+/* Card Section Start */
 img{
     max-width: 100%;
 }
@@ -7,6 +119,7 @@ img{
     border: 2px solid  rgba(149, 167, 180, 0.409);
     margin: 100px auto;
     border-radius: 5px;
+
 }
 .card-body{
     padding: 0 10px;
@@ -37,7 +150,7 @@ img{
     text-align: center;
     font-size: 30px;
     /* color: white; */
-    color: hsl(0, 96%, 50%);
+    color: rgb(19, 231, 235);
     font-weight: 600;
     opacity: 0;
     transition: all 0.4s linear;
@@ -54,7 +167,6 @@ img{
 .card-body{
     text-align: center;
 }
-.card-body h2{}
 .card-body h2 p{
     font-size: 20px;
     font-weight: 600;
@@ -71,6 +183,109 @@ img{
 }
 .button:hover{
     background-color: #98fb9807;
-
-
 }
+
+.dev-zone{
+    display: flex;
+    justify-content: center;
+}
+.btn-1{
+    font-size: 15px;
+    background-color: #07c0f3;
+    border-radius: 35px;
+    padding: 10px 20px;
+    border: 2px solid  #07c0f3;
+    /* color: white; */
+    font-weight: 600;
+    transition: all 0.4s ease-in;
+}
+.btn-1:hover{
+    background-color: #98fb9807;
+}
+.btn-2{
+    font-size: 15px;
+    background-color: #3ef30798;
+    border-radius: 35px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: 2px solid  #3ef30798;
+    /* color: white; */
+    font-weight: 600;
+    /* transition: all 0.4s ease-in; */
+}
+.btn-2:hover{
+background-color: #98fb9807;
+}
+/* Design Button Start */
+.btn {
+    height: 60px!important;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .03em;
+    color: #000;
+    border-radius: 5px;
+    background-color: var(--themeColor);
+    max-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    border-color: var(--primary);
+    outline: 0;
+    border: 1px solid var(--themeColor)
+}
+
+.btn-primary:hover {
+    color: var(--textLight)
+}
+
+.btn-primary:after {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 15%;
+    right: -20%;
+    top: -4%;
+    height: 150%;
+    width: 150%;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: var(--bgDark);
+    transform: skewX(45deg) scaleX(0);
+    z-index: -1;
+    transition: all .5s ease-out 0s
+}
+
+.btn:hover:after {
+    transform: skewX(45deg) scale(1)
+}
+
+.btn.reverse {
+    color: var(--textLight)
+}
+
+.btn.reverse:hover {
+    color: var(--bgDark)
+}
+
+.btn.reverse:after {
+    transform: skewX(45deg) scale(1)
+}
+
+.btn.reverse:hover:after {
+    transform: skewX(45deg) scaleX(0)
+}
+
+a.btn-primary {
+    max-height: 40px;
+    padding: 0 20px;
+    border: 1px solid var(--themeColor)
+}
+
+/* Design Button End */
