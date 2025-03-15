@@ -1,291 +1,258 @@
 /* Navbar Start  */
-.navbar{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+.navbar {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
 }
 ul {
-    list-style-type: none;
-    /* background-color: rgb(249, 238, 238); */
-    color: rgba(44, 22, 135, 0.714);
+  list-style-type: none;
+  /* background-color: rgb(249, 238, 238); */
+  color: rgba(44, 22, 135, 0.714);
 }
-ul li{
-    display: inline-block;
-    padding: 20px;
+ul li {
+  display: inline-block;
+  padding: 20px;
 }
-ul li:hover{
-    background-color: green;
-    color: white;
+ul li:hover {
+  background-color: green;
+  color: white;
 }
 .dropdown {
-    display: none;
-    position: absolute;
-    margin-left: -50px;
-    background-color: #d007f3;
-    border-radius: 5px;
-    color: white;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  margin-left: -50px;
+  background-color: #d007f3;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
 }
-.dropdown ul{
-    margin: 0px;
-    padding: 0px;
+.dropdown ul {
+  margin: 0px;
+  padding: 0px;
 }
-.dropdown ul li{
-    display: block;
-    margin: 0px;
-    padding: 10px;
+.dropdown ul li {
+  display: block;
+  margin: 0px;
+  padding: 10px;
 }
-ul li:hover .dropdown{
-    display: block;
-    position: absolute;
-    margin-left: -50px;
-    background-color: #d3cec3;
-    border-radius: 5px;
-    color: white;
-    z-index: 1;
+ul li:hover .dropdown {
+  display: block;
+  position: absolute;
+  margin-left: -50px;
+  background-color: #d3cec3;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
 }
 
 .dropdown-1 {
-    display: none;
-    width: 80px;
-    position: absolute;
-    margin-left: -50px;
-    margin-top: -30px;
-    background-color: #07f362;
-    border-radius: 5px;
-    color: white;
-    z-index: 1;
+  display: none;
+  width: 80px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: -30px;
+  background-color: #07f362;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
 }
-.dropdown li:hover .dropdown-1{
-    display: block;
-    position: absolute;
-    margin-left: 125px;
-    background-color: #d7e6df;
-    border-radius: 5px;
-    color: white;
-    z-index: 1;
+.dropdown li:hover .dropdown-1 {
+  display: block;
+  position: absolute;
+  margin-left: 125px;
+  background-color: #d7e6df;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
 }
 .dropdown-2 {
-    display: none;
-    width: 80px;
-    position: absolute;
-    margin-left: -50px;
-    margin-top: -30px;
-    background-color: #07f362;
-    border-radius: 5px;
-    color: white;
-    z-index: 1;
+  display: none;
+  width: 80px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: -30px;
+  background-color: #07f362;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
 }
-.dropdown-1 li:hover .dropdown-2{
-    display: block;
-    position: absolute;
-    margin-left: 70px;
-    background-color: #f1ede6;
-    border-radius: 5px;
-    color: white;
-    z-index: 1;
+.dropdown-1 li:hover .dropdown-2 {
+  display: block;
+  position: absolute;
+  margin-left: 70px;
+  background-color: #f1ede6;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
+}
+.dropdown-3 {
+  display: none;
+  width: 80px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: -30px;
+  background-color: #07f362;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
+}
+.dropdown-2 li:hover .dropdown-3 {
+  display: block;
+  position: absolute;
+  margin-left: 70px;
+  background-color: #f1ede6;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
 }
 /* Navbar End  */
 /* Navbar Hi effect Start  */
 .hi-effect {
-    font-size: 50px;
-    display: inline-block;
-    animation: hieffect 1s infinite;
-    rotate: 20deg;
-    margin: -20px;
+  font-size: 50px;
+  display: inline-block;
+  animation: hieffect 1s infinite;
+  rotate: 20deg;
+  margin: -20px;
 }
 @keyframes hieffect {
-    0% {
-        transform: rotate(0deg)
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    50% {
-        transform: rotate(-30deg)
-    }
+  50% {
+    transform: rotate(-30deg);
+  }
 
-    to {
-        transform: rotate(0deg)
-    }
+  to {
+    transform: rotate(0deg);
+  }
 }
 /*   Hi effect end  */
 /* Card Section Start */
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
-.card{
-    width: 400px;
-    height: 500px;
-    border: 2px solid  rgba(149, 167, 180, 0.409);
-    margin: 100px auto;
-    border-radius: 5px;
-
+.card {
+  width: 400px;
+  height: 500px;
+  border: 2px solid rgba(149, 167, 180, 0.409);
+  margin: 25px auto;
+  border-radius: 5px;
 }
-.card-body{
-    padding: 0 10px;
+.card-body {
+  padding: 0 10px;
 }
-.hover-effect-04{
-    position: relative;
-    
+.hover-effect-04 {
+  position: relative;
 }
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(80, 77, 77, 0.422);
-    opacity: 0;
-    transition: all 0.4s linear;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(80, 77, 77, 0.422);
+  opacity: 0;
+  transition: all 0.4s linear;
 }
-.hover-effect-04 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.hover-effect-04 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.hover-effect-04 h1{
-    position: absolute;
-    top: 60%;
-    left: 0;
-    text-align: center;
-    font-size: 30px;
-    /* color: white; */
-    color: rgb(19, 231, 235);
-    font-weight: 600;
-    opacity: 0;
-    transition: all 0.4s linear;
+.hover-effect-04 h1 {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  text-align: center;
+  font-size: 30px;
+  /* color: white; */
+  color: rgb(19, 231, 235);
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.4s linear;
 }
 
-.hover-effect-04:hover .overlay{
-    opacity: 1;
-    transform-style: 1;
+.hover-effect-04:hover .overlay {
+  opacity: 1;
+  transform-style: 1;
 }
-.hover-effect-04:hover h1{
-    opacity: 1;
-    top: 40%;
+.hover-effect-04:hover h1 {
+  opacity: 1;
+  top: 40%;
 }
-.card-body{
-    text-align: center;
+.card-body {
+  text-align: center;
 }
-.card-body h2 p{
-    font-size: 20px;
-    font-weight: 600;
+.card-body h2 p {
+  font-size: 20px;
+  font-weight: 600;
 }
-.button{
-    font-size: 15px;
-    background-color: #d007f3;
-    border-radius: 35px;
-    padding: 10px 20px;
-    border: 2px solid  #d007f3;
-    /* color: white; */
-    font-weight: 600;
-    transition: all 0.4s ease-in;
+.button {
+  font-size: 15px;
+  background-color: #d007f3;
+  border-radius: 35px;
+  padding: 10px 20px;
+  border: 2px solid #d007f3;
+  /* color: white; */
+  font-weight: 600;
+  transition: all 0.4s ease-in;
 }
-.button:hover{
-    background-color: #98fb9807;
+.button:hover {
+  background-color: #98fb9807;
 }
-
-.dev-zone{
-    display: flex;
-    justify-content: center;
+/* ======= Picture Start====== */
+.picture {
+  display: flex;
+  margin-top: 100px;
 }
-.btn-1{
-    font-size: 15px;
-    background-color: #07c0f3;
-    border-radius: 35px;
-    padding: 10px 20px;
-    border: 2px solid  #07c0f3;
-    /* color: white; */
-    font-weight: 600;
-    transition: all 0.4s ease-in;
+.picture img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 20px;
+  padding: 50px 50px;
 }
-.btn-1:hover{
-    background-color: #98fb9807;
+/* <!----------Button Design Start---------- */
+body {
+  margin: 0;
+  padding: 0;
 }
-.btn-2{
-    font-size: 15px;
-    background-color: #3ef30798;
-    border-radius: 35px;
-    padding: 10px 20px;
-    margin-left: 20px;
-    border: 2px solid  #3ef30798;
-    /* color: white; */
-    font-weight: 600;
-    /* transition: all 0.4s ease-in; */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #07f362; */
 }
-.btn-2:hover{
-background-color: #98fb9807;
-}
-/* Design Button Start */
 .btn {
-    height: 60px!important;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: .03em;
-    color: #000;
-    border-radius: 5px;
-    background-color: var(--themeColor);
-    max-height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .5s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    cursor: pointer;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    border-color: var(--primary);
-    outline: 0;
-    border: 1px solid var(--themeColor)
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(28, 205, 125);
+  outline: 2px solid rgb(243, 9, 161);
+  padding: 20px 40px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: color 5s;
 }
-
-.btn-primary:hover {
-    color: var(--textLight)
+.btn:hover {
+  color: rgb(34, 10, 246);
 }
-
-.btn-primary:after {
-    position: absolute;
-    content: "";
-    display: block;
-    left: 15%;
-    right: -20%;
-    top: -4%;
-    height: 150%;
-    width: 150%;
-    bottom: 0;
-    border-radius: 2px;
-    background-color: var(--bgDark);
-    transform: skewX(45deg) scaleX(0);
-    z-index: -1;
-    transition: all .5s ease-out 0s
+.btn:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: rgb(243, 9, 161);
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: width 5s;
 }
-
-.btn:hover:after {
-    transform: skewX(45deg) scale(1)
+.btn:hover::before {
+  width: 110%;
 }
-
-.btn.reverse {
-    color: var(--textLight)
-}
-
-.btn.reverse:hover {
-    color: var(--bgDark)
-}
-
-.btn.reverse:after {
-    transform: skewX(45deg) scale(1)
-}
-
-.btn.reverse:hover:after {
-    transform: skewX(45deg) scaleX(0)
-}
-
-a.btn-primary {
-    max-height: 40px;
-    padding: 0 20px;
-    border: 1px solid var(--themeColor)
-}
-
-/* Design Button End */
