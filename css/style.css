@@ -137,7 +137,7 @@ img {
   width: 400px;
   height: 500px;
   border: 2px solid rgba(149, 167, 180, 0.409);
-  margin: 25px auto;
+  margin: 75px auto;
   border-radius: 5px;
 }
 .card-body {
@@ -180,17 +180,18 @@ img {
 }
 .hover-effect-04:hover h1 {
   opacity: 1;
-  top: 40%;
+  /* top: 40%; */
 }
 .card-body {
   text-align: center;
 }
 .card-body h2 p {
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 600;
 }
 .button {
-  font-size: 15px;
+  width: 180px;
+  font-size: 20px;
   background-color: #d007f3;
   border-radius: 35px;
   padding: 10px 20px;
@@ -223,14 +224,14 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100px;
   /* background-color: #07f362; */
 }
 .btn {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: rgb(28, 205, 125);
+  color: rgba(102, 5, 237, 0.942);
   outline: 2px solid rgb(243, 9, 161);
   padding: 20px 40px;
   border-radius: 10px;
@@ -239,9 +240,8 @@ section {
   transition: color 5s;
 }
 .btn:hover {
-  color: rgb(34, 10, 246);
 }
-.btn:hover::before {
+a.btn:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -249,10 +249,56 @@ section {
   width: 0;
   height: 100%;
   background-color: rgb(243, 9, 161);
-  transform: skewX(35deg);
+  transform: skewX(45deg);
   z-index: -1;
-  transition: width 5s;
+  transition: width 8s;
 }
-.btn:hover::before {
-  width: 110%;
+a.btn:hover::before {
+  width: 115%;
+}
+/* Hover me btton start  */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 100px;
+}
+
+.btn-1 {
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: rgb(43, 18, 233);
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #d007f3;
+    transition: ease-out .5s;
+    font-size: 30px;
+    padding-top: 13px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(20, 98, 199);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform: translate(-100%);
+    transition: all .5s linear;
+}
+.btn-1:hover::before{
+    transform: translate(0);
+    z-index: -1;
+}
+.btn-1:hover{
+    color: #ddd4df;
 }
