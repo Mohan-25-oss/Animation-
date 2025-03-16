@@ -220,85 +220,106 @@ body {
   margin: 0;
   padding: 0;
 }
-section {
+/* .container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  text-align: center;
   height: 100px;
-  /* background-color: #07f362; */
-}
-.btn {
+} */
+
+a.btn {
+  width: 150px;
+  height: 30px;
   text-decoration: none;
-  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: #05f43d;
   letter-spacing: 2px;
-  color: rgba(102, 5, 237, 0.942);
-  outline: 2px solid rgb(243, 9, 161);
+  background-color: rgb(8, 24, 243);
+  box-shadow: inset 0 0 0 0 #17f307;
   padding: 20px 40px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  transition: color 5s;
+  transition: ease-out 0.5s;
+  z-index: 10;
 }
-.btn:hover {
-}
-a.btn:hover::before {
+
+a.btn::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: -50px;
-  width: 0;
-  height: 100%;
+  top: 0px;
+  left: -80px;
   background-color: rgb(243, 9, 161);
+  outline: 2px solid rgb(243, 9, 161);
+  width: 150%;
+  height: 100%;
+  transform: translate(100%);
   transform: skewX(45deg);
-  z-index: -1;
-  transition: width 8s;
+  transition: all 0.5s linear;
+  z-index: 0; /* Make sure it's below the text */
 }
-a.btn:hover::before {
-  width: 115%;
+
+.btn:hover::before {
+  width: 51%;
+  transform: translate(0);
+  z-index: 0; /* Keeps the element in the background */
+  transform: skewX(45deg);
 }
+
+a.btn span {
+  position: relative;
+  z-index: 1; /* Ensure text is above the pseudo-element */
+}
+.btn:hover {
+  color: whitesmoke;
+}
+
 /* Hover me btton start  */
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  min-height: 100px;
 }
 
 .btn-1 {
-    width: 200px;
-    height: 50px;
-    border: none;
-    color: rgb(43, 18, 233);
-    background-color: red;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #d007f3;
-    transition: ease-out .5s;
-    font-size: 30px;
-    padding-top: 13px;
-    outline: none;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+  width: 200px;
+  height: 50px;
+  border: none;
+  color: rgb(43, 18, 233);
+  background-color: rgb(0, 255, 47);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #d007f3;
+  transition: ease-out 0.5s;
+  font-size: 30px;
+  padding-top: 13px;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-
+.btn-1:hover {
+  color: #ddd4df;
+}
 .btn-1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(20, 98, 199);
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transform: translate(-100%);
-    transition: all .5s linear;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(20, 98, 199);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform: translate(-100%);
+  transition: all 0.5s linear;
 }
-.btn-1:hover::before{
-    transform: translate(0);
-    z-index: -1;
-}
-.btn-1:hover{
-    color: #ddd4df;
+.btn-1:hover::before {
+  transform: translate(0);
+  z-index: -1;
 }
